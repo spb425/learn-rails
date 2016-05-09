@@ -54,5 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  resources :contacts, only: [:new, :create]
   root to: 'visitors#new'
 end
